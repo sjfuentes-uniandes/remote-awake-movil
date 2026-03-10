@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Eye outline -->
+    <path
+        android:pathData="M1,12C3.5,7 8,4 12,4s8.5,3 11,8c-2.5,5-7,8-11,8S3.5,17 1,12z"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+
+    <!-- Eye pupil -->
+    <path
+        android:pathData="M12,9a3,3 0 1,1 0,6a3,3 0 1,1 0,-6"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"/>
+
+    <!-- Slash -->
+    <path
+        android:pathData="M3,3L21,21"
+        android:strokeColor="#1A1A1A"
+        android:strokeWidth="2"
+        android:fillColor="@android:color/transparent"
+        android:strokeLineCap="round"/>
+</vector>
