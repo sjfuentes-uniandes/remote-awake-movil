@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:fontFamily="sans-serif"
+        android:text="Hora de\ndespertar!!"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="57sp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="165dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/surface"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
+        <ImageView
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_alarm"
+            app:tint="#000000" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Alarma de respaldo 1"
+        android:textColor="@color/tertiary"
+        android:textSize="16sp" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="280dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="17dp"
+        app:dividerColor="@color/secondaryContainer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="4:32 AM"
+        android:textColor="@color/text_primary"
+        android:textSize="57sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Reunión Cliente"
+        android:textColor="@color/text_primary"
+        android:textSize="28sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirmWakeUp"
+        style="@style/Widget.Material3.Button"
+        android:layout_width="231dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="60dp"
+        android:paddingHorizontal="48dp"
+        android:text="Confirmar\nDespertar"
+        android:textAllCaps="false"
+        android:textColor="@color/onTertiary"
+        android:textSize="22sp"
+        app:backgroundTint="@color/tertiary"
+        app:cornerRadius="20dp" />
+
+</LinearLayout>
