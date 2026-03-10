@@ -6,6 +6,7 @@ import android.text.InputType
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -15,6 +16,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        val etEmail = findViewById<EditText>(R.id.etCorreo)
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val ivToggle = findViewById<ImageView>(R.id.ivPasswordToggle)
 
@@ -33,9 +35,16 @@ class LoginActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.btnLogin).setOnClickListener {
-            startActivity(Intent(this, HomeActivity::class.java))
-            overridePendingTransition(0, 0)
-            finish()
+            val email = etEmail.text.toString()
+            val password = etPassword.text.toString()
+
+            if (email == "admin" && password == "admin") {
+                startActivity(Intent(this, HomeActivity::class.java))
+                overridePendingTransition(0, 0)
+                finish()
+            } else {
+                Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }

@@ -198,7 +198,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Pairing"
+                android:text="Pares"
                 android:textColor="@color/primary"
                 android:textSize="28sp" />
 
@@ -277,7 +277,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Daily"
+                android:text="Reunión de equipo"
                 android:textColor="@color/primary"
                 android:textSize="28sp" />
 
