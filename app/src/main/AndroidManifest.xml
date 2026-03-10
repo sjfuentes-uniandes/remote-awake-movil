@@ -34,6 +34,10 @@
             android:name=".AlarmRingingBackup1Activity"
             android:exported="false" />
 
+        <activity
+            android:name=".AlarmRingingBackup2Activity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

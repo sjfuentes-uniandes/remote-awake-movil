@@ -12,6 +12,7 @@ class LoginActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnLogin).setOnClickListener {
             startActivity(Intent(this, HomeActivity::class.java))
+            overridePendingTransition(0, 0)
             finish()
         }
     }

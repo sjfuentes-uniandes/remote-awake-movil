@@ -12,10 +12,12 @@ class HomeActivity : AppCompatActivity() {
 
         findViewById<MaterialButton>(R.id.btnTestPrincipal).setOnClickListener {
             startActivity(Intent(this, AlarmRingingActivity::class.java))
+            overridePendingTransition(0, 0)
         }
 
         findViewById<MaterialButton>(R.id.btnTestRespaldo).setOnClickListener {
             startActivity(Intent(this, AlarmRingingBackup1Activity::class.java))
+            overridePendingTransition(0, 0)
         }
     }
 }
