@@ -19,5 +19,10 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this, AlarmRingingBackup1Activity::class.java))
             overridePendingTransition(0, 0)
         }
+
+        findViewById<MaterialButton>(R.id.btnTestVoz).setOnClickListener {
+            startActivity(Intent(this, VoiceWakeConfirmActivity::class.java))
+            overridePendingTransition(0, 0)
+        }
     }
 }

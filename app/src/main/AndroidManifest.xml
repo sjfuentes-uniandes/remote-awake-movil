@@ -38,6 +38,10 @@
             android:name=".AlarmRingingBackup2Activity"
             android:exported="false" />
 
+        <activity
+            android:name=".VoiceWakeConfirmActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
