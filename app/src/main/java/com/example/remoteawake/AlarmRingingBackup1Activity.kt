@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
-import android.widget.Button
+import com.google.android.material.button.MaterialButton
 
 class AlarmRingingBackup1Activity : AppCompatActivity() {
     private val handler = Handler(Looper.getMainLooper())
@@ -15,9 +15,11 @@ class AlarmRingingBackup1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_alarm_ringing_backup1)
 
-        findViewById<Button>(R.id.btnConfirmWakeUp).setOnClickListener {
+        findViewById<MaterialButton>(R.id.btnConfirmWakeUp).setOnClickListener {
             hasInteracted = true
             handler.removeCallbacksAndMessages(null)
+            startActivity(Intent(this, VoiceWakeConfirmActivity::class.java))
+            overridePendingTransition(0, 0)
             finish()
         }
 
