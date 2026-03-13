@@ -1,6 +1,7 @@
 package com.example.remoteawake
 
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -22,6 +23,10 @@ class BackupCanceledDialogFragment : DialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<MaterialButton>(R.id.btnAceptar).setOnClickListener {
             dismiss()
+            startActivity(Intent(requireContext(), HomeActivity::class.java).apply {
+                flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+            })
+            requireActivity().finish()
         }
     }
 
@@ -30,5 +35,14 @@ class BackupCanceledDialogFragment : DialogFragment() {
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         return dialog
+    }
+
+    override fun onStart() {
+        super.onStart()
+        dialog?.window?.let { window ->
+            val params = window.attributes
+            params.width = (resources.displayMetrics.widthPixels * 0.72).toInt()
+            window.attributes = params
+        }
     }
 }
