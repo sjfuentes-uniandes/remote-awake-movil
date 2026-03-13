@@ -12,5 +12,9 @@ class VoiceWakeConfirmActivity : AppCompatActivity() {
         findViewById<View>(R.id.ivClose).setOnClickListener {
             finish()
         }
+
+        findViewById<View>(R.id.btnMic).setOnClickListener {
+            BackupCanceledDialogFragment().show(supportFragmentManager, "BackupCanceledDialog")
+        }
     }
 }
