@@ -20,11 +20,6 @@ class HomeActivity : AppCompatActivity() {
             overridePendingTransition(0, 0)
         }
 
-        findViewById<MaterialButton>(R.id.btnTestVoz).setOnClickListener {
-            startActivity(Intent(this, VoiceWakeConfirmActivity::class.java))
-            overridePendingTransition(0, 0)
-        }
-
         findViewById<MaterialButton>(R.id.btnTestAntiSnooze).setOnClickListener {
             startActivity(Intent(this, AntiSnoozeActivity::class.java))
             overridePendingTransition(0, 0)

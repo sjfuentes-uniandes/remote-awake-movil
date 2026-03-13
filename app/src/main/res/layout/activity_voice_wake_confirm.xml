@@ -21,13 +21,13 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingMultiplier="1.1"
             android:text="Confirmando\nDespertar..."
             android:textAlignment="center"
-            android:fontFamily="sans-serif"
-            android:textStyle="bold"
             android:textColor="@color/primary"
             android:textSize="48sp"
-            android:lineSpacingMultiplier="1.1" />
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/btnMic"

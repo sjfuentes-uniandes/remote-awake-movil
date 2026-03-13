@@ -180,25 +180,6 @@
                 style="@style/Widget.Material3.Button.TonalButton" />
         </LinearLayout>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnTestVoz"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginBottom="24dp"
-            android:text="Probar Voz"
-            android:textSize="14sp"
-            android:textAllCaps="false"
-            android:maxLines="1"
-            android:paddingHorizontal="32dp"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:insetLeft="0dp"
-            android:insetRight="0dp"
-            app:cornerRadius="20dp"
-            app:backgroundTint="@color/secondaryContainer"
-            android:textColor="@color/onSecondaryContainer"
-            style="@style/Widget.Material3.Button.TonalButton" />
-
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="280dp"
             android:layout_height="2dp"
