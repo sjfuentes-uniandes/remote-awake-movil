@@ -42,6 +42,10 @@
             android:name=".VoiceWakeConfirmActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".AntiSnoozeActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
